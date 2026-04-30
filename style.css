@@ -1,0 +1,73 @@
+:root {
+    --main-bg: radial-gradient(circle at center, #0d1a21 0%, #05080a 100%);
+    --container-bg: rgba(15, 25, 32, 0.95);
+    --accent-color: #ffb703; 
+    --input-bg: #1a262e;
+    --text-white: #ffffff;
+    --text-gray: #8a99a4;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--main-bg);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-white);
+}
+
+.auth-container {
+    background: var(--container-bg);
+    padding: 30px;
+    border-radius: 20px;
+    width: 400px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+}
+
+input, select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    background: var(--input-bg);
+    border: 1px solid #2d3e4a;
+    border-radius: 8px;
+    color: white;
+    box-sizing: border-box; /* الخاصية دي اللي بتمنع المربعات تترحل يمين أو شمال */
+    outline: none;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background-color: var(--accent-color);
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.error-msg {
+    color: #ff4d4d;
+    font-size: 12px;
+    text-align: left;
+    margin-bottom: 10px;
+    display: none; /* مخفي وهنظهره بالـ JS */
+}
+
+/* ستايل الجدول للبروفايل */
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    text-align: left;
+}

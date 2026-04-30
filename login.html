@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log In - CS Club</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="auth-container">
+        <h2 class="welcome-back">Welcome Back!</h2>
+        <form id="loginForm">
+            <input type="email" id="loginEmail" placeholder="Email Address">
+            <div id="emailError" class="error-msg">Email not found!</div>
+
+            <input type="password" id="loginPass" placeholder="Password">
+            <div id="passError" class="error-msg">Wrong password!</div>
+<br>
+<div id="successMsg" style="color: #4BB543; margin-top: 10px; display: none; font-weight: bold;"></div>
+<br>
+            <button type="submit" class="btn-submit">Log In</button>
+        </form>
+        <p style="font-size: 14px; margin-top: 15px;">
+            Don't have an account? <a href="signup.html" style="color: var(--accent-color);">Sign Up</a>
+        </p>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
